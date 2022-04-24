@@ -30,9 +30,8 @@ public class ResponseHeaderServlet extends HttpServlet {
         cookie(response);
         redirect(response);
         //[message body]
-
         PrintWriter writer = response.getWriter();
-        writer.println("ok");
+        writer.println("ok"); //바디에 들어갈내용
     }
 
     private void content(HttpServletResponse response) {
